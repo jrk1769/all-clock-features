@@ -1,7 +1,7 @@
 import "./App.css";
-import Clock from "./components/clock/clock";
+import Clock from "./components/clock/Clock";
 import { useState } from "react";
-import Stopwatch from "./components/stopwatch/stopwatch";
+import Stopwatch from "./components/stopwatch/Stopwatch";
 import Footer from "./components/footer/Footer";
 
 function App() {

@@ -1,0 +1,30 @@
+.details {
+    margin: 10px auto;
+  }
+  .dateString {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .clock {
+    margin: 10px auto;
+  }
+  .clockContainer {
+      width: 250px;
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(98, 97, 97);
+      margin: auto;
+      border-radius: 50%;
+  }
+  .time {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    height: 100%;
+    font-size: 30px;
+    font-weight: bold;
+    color: #da4747;
+  }

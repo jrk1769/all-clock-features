@@ -1,4 +1,5 @@
 import { useState } from "react";
+import "./Clock.css";
 
 const Clock = (props) => {
   const [time, setTime] = useState("Loading...");

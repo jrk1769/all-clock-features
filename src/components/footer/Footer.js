@@ -1,4 +1,5 @@
-import FooterBtn from "../appButton/FooterBtn";
+import FooterBtn from "../shared/FooterBtn";
+import "./Footer.css";
 
 const Footer = (props) => {
   return (

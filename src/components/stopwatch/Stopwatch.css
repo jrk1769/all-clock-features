@@ -6,6 +6,12 @@
     margin: 5px 0;
 }
 
+.watchContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
 .watchElements {
     height: 100%;
     display: flex;

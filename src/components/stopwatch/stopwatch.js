@@ -1,5 +1,5 @@
 import { useState } from "react";
-import GenericSpan from "./genericSpan";
+import GenericSpan from "./GenericSpan";
 import "./Stopwatch.css";
 import {
   Start,
