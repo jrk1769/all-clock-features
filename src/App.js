@@ -1,21 +1,27 @@
-import './App.css';
-import Clock from './components/clock/clock';
-import AppBtns from './components/appButton/appBtns';
+import "./App.css";
+import Clock from "./components/clock/clock";
+import { useState } from "react";
+import Stopwatch from "./components/stopwatch/stopwatch";
+import Footer from "./components/footer/Footer";
 
 function App() {
+  const [selected, setSelected] = useState(1);
   return (
     <div className="app">
-      
-        <div className='appHeading'>
-          <h2>Android Clock</h2>
-        </div>
-        <Clock />
-    
-      <footer className='appFooter'>
-        <AppBtns class="alarmBtn footerBtn" value="Alarm" />
-        <AppBtns class="stopwatchBtn footerBtn" value="Stopwatch" />
-        <AppBtns class="countdownBtn footerBtn" value="Countdown" />
-        <AppBtns class="clockBtn footerBtn selected" value="Clock" />
+      <div className="displayArea">
+        {selected === 0 && "Null"}
+        {selected === 1 && <Stopwatch />}
+        {selected === 2 && "Null"}
+        {selected === 3 && <Clock />}
+      </div>
+
+      <footer className="appFooter">
+        <Footer
+          selected={selected}
+          changeSelectedScreen={(screen) => {
+            setSelected(screen);
+          }}
+        />
       </footer>
     </div>
   );
