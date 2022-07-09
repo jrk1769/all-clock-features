@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Clock from './components/clock/clock';
+import AppBtns from './components/appButton/appBtns';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      
+        <div className='appHeading'>
+          <h2>Android Clock</h2>
+        </div>
+        <Clock />
+    
+      <footer className='appFooter'>
+        <AppBtns class="alarmBtn footerBtn" value="Alarm" />
+        <AppBtns class="stopwatchBtn footerBtn" value="Stopwatch" />
+        <AppBtns class="countdownBtn footerBtn" value="Countdown" />
+        <AppBtns class="clockBtn footerBtn selected" value="Clock" />
+      </footer>
     </div>
   );
 }
