@@ -8,7 +8,7 @@ import {
   Timer,
   Stop,
   StartOver,
-} from "../../stopWatchConstants";
+} from "./stopWatchConstants";
 
 export default function Stopwatch() {
   const [stopWatchState, setStopWatchState] = useState(0);
